@@ -4,29 +4,19 @@ import java.util.ArrayList;
 
 public class student {
     protected String studylevel ;
- protected  double GPA;
- protected  String id;
- protected  int semester;
- protected  double cridet ;
- protected  static int numberofstudent;  
-protected ArrayList<String>registeredcourses; 
-protected String name;
- protected String birth;
- protected String address;
-protected  String phone;
- protected String enrolled_year;
-protected  String faculty;
- protected String department;
- public student(String nam,String adr,String birt,String phn,String year,String facl,String depart,String level,String i,double gpa,int semes,double cred){
-
-      studylevel=level;
-       id=i;
-       GPA=gpa;
-       cridet=cred;
-       semester=semes;  
-       numberofstudent++;
-    this.registeredcourses=new ArrayList <String> ();  
-    }
+    protected double GPA;
+    protected String id;
+    protected int semester;
+    protected double cridet ;
+    protected static int numberofstudent;  
+    protected ArrayList<String>registeredcourses; 
+    protected String name;
+    protected String birth;
+    protected String address;
+    protected String phone;
+    protected String enrolled_year;
+    protected String faculty;
+    protected String department;
 
     public student(String studylevel, double GPA, String id, int semester, double cridet, ArrayList<String> registeredcourses, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department) {
         this.studylevel = studylevel;
