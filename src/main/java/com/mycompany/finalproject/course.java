@@ -18,7 +18,7 @@ public class course {
     private ArrayList<String>prerequisitecourses;
     private ArrayList<String>textbooks;
     private Instructor instructor;
-    private  Department department;
+    private Department department;
     private Classroom classroom;
     
 public course(String course1i,String course2i,String course3i,String course4i,String course5i ,String course6i ,double f,double g,double x){       
