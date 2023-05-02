@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Department {
     protected int departmentid;
- protected String name;
- protected ArrayList<Instructor>faculties;
+    protected String name;
+    protected ArrayList<Instructor>faculties;
 
     public Department(int departmentid, String name, ArrayList<Instructor> faculties) {
         this.departmentid = departmentid;
