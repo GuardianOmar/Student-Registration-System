@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Instructor {
     protected int facultyid;
-  protected String name;
-  protected String address;
-  protected String phonenumber;
-  protected ArrayList<String>department;
+    protected String name;
+    protected String address;
+    protected String phonenumber;
+    protected ArrayList<String>department;
 
     public Instructor(int facultyid, String name, String address, String phonenumber, ArrayList<String> department) {
         this.facultyid = facultyid;
