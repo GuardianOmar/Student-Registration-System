@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Classroom {
     protected int id;
-protected String location;
-protected int capacity;
-protected ArrayList<course>courses;
+    protected String location;
+    protected int capacity;
+    protected ArrayList<course>courses;
 
     public Classroom(int id, String location, int capacity, ArrayList<course> courses) {
         this.id = id;
