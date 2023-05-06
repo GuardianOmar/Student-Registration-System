@@ -15,6 +15,9 @@ public class Classroom {
         this.courses = courses;
     }
 
+    public Classroom() {
+    }
+
     public int getId() {
         return id;
     }
