@@ -2,23 +2,22 @@ package com.mycompany.finalproject;
 
 import java.util.ArrayList;
 
-public class student {
-    protected String studylevel ;
-    protected double GPA;
-    protected String id;
-    protected int semester;
-    protected double cridet ;
-    protected static int numberofstudent;  
-    protected ArrayList<String>registeredcourses; 
-    protected String name;
-    protected String birth;
-    protected String address;
-    protected String phone;
-    protected String enrolled_year;
-    protected String faculty;
-    protected String department;
+public class student {protected String studylevel ;
+protected  double GPA;
+protected  String id;
+protected  int semester;
+protected  double cridet ;
+protected  static int numberofstudent;  
+protected ArrayList<String>registeredcourses; 
+protected String name;
+protected String birth;
+protected String address;
+protected  String phone;
+protected String enrolled_year;
+protected  String faculty;
+protected String department;
 
-    public student(String studylevel, double GPA, String id, int semester, double cridet, ArrayList<String> registeredcourses, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department) {
+    public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department) {
         this.studylevel = studylevel;
         this.GPA = GPA;
         this.id = id;
@@ -127,7 +126,7 @@ public class student {
         return registeredcourses;
     }
     public void registerCourse(String course){
-     registeredcourses.add(course);
+        registeredcourses.add(course);
     }
     public void unregisterCourse(String course){
         registeredcourses.remove(course);
@@ -148,14 +147,14 @@ public class student {
     public double getCridet() {
         return cridet;
     }
- public boolean maxnumclassroom(int maxnumber ){
-     maxnumber=2;
-     if(this.numberofstudent<=maxnumber)
-     return true;
-     else
-    return false;
- }
+    public boolean maxnumclassroom(int maxnumber ){
+        maxnumber=2;
+        if(this.numberofstudent<=maxnumber)
+            return true;
+        else
+            return false;
+    }
  public void printdata(){
 System.out.println(birth+"\n"+address+"\n"+phone+"\n"+enrolled_year+"\n"+faculty+"\n"+department+"\n"+id+"\n"+GPA+"\n"+"your check"+cridet+"$"+"\n"+studylevel);
- }
+    }
 }
