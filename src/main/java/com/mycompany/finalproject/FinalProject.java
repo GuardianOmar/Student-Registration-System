@@ -10,7 +10,6 @@ public class FinalProject {
                 new inter_face().setVisible(true);
             }
         });
-        //test
         student one =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
         ArrayList list = new ArrayList<String>(100);
         ArrayList list2 = new ArrayList<Double>(2000);
