@@ -14,36 +14,33 @@ public class course {
     private double finalmark3;
     private String term;
     private int credits;
-    private int coursenamber;
+    private int coursenumber;
     private ArrayList<String>prerequisitecourses;
     private ArrayList<String>textbooks;
     private Instructor instructor;
     private Department department;
     private Classroom classroom;
-    
-public course(String course1i,String course2i,String course3i,String course4i,String course5i ,String course6i ,double f,double g,double x){       
-  course1=course1i;
-  course2=course2i;
-  course3=course3i;
-  course4=course4i;
-  course5=course5i;
-  course6=course6i;
-  finalmark1=f;
-  finalmark2=g;
-  finalmark3=x;
-  
-}
 
-public course(String term,Department department ,Instructor instructor,Classroom classroom,int credits, int coursenamber, ArrayList<String> prerequisitecourses, ArrayList<String> textbooks) {
+    public course(ArrayList<String>textbooks,ArrayList<String>prerequisitecourses,String course1, String course2, String course3, String course4, String course5, String course6, double finalmark1, double finalmark2, double finalmark3, String term, int credits, int coursenamber, Instructor instructor, Department department, Classroom classroom) {
+        this.course1 = course1;
+        this.course2 = course2;
+        this.course3 = course3;
+        this.course4 = course4;
+        this.course5 = course5;
+        this.course6 = course6;
+        this.finalmark1 = finalmark1;
+        this.finalmark2 = finalmark2;
+        this.finalmark3 = finalmark3;
         this.term = term;
         this.credits = credits;
-        this.coursenamber = coursenamber;
+        this.coursenumber = coursenamber;
         this.prerequisitecourses = prerequisitecourses;
         this.textbooks = textbooks;
-        this.department=department;
-        this.instructor=instructor;
-        this.classroom=classroom;
+        this.instructor = instructor;
+        this.department = department;
+        this.classroom = classroom;
     }
+
     public void setFinalmark1(double finalmark1) {
         this.finalmark1 = finalmark1;
     }
@@ -90,7 +87,7 @@ public course(String term,Department department ,Instructor instructor,Classroom
     }
 
     public void setCoursenamber(int coursenamber) {
-        this.coursenamber = coursenamber;
+        this.coursenumber = coursenamber;
     }
 
     public void setPrerequisitecourses(ArrayList<String> prerequisitecourses) {
@@ -120,8 +117,8 @@ public course(String term,Department department ,Instructor instructor,Classroom
         return course6;
     }
     public void semester1(){
-        System.out.print( course2+" 764875476    "+course1+"   000057438 "+course3+"3767468");
- }  
+        System.out.print( course2+""+course1+" "+course3+"");
+    }
 
     public String getTerm() {
         return term;
@@ -132,42 +129,6 @@ public course(String term,Department department ,Instructor instructor,Classroom
     }
 
     public int getCoursenamber() {
-        return coursenamber;
+        return coursenumber;
     }
-
-    public ArrayList<String> getPrerequisitecourses() {
-        return prerequisitecourses;
-    }
-
-    public ArrayList<String> getTextbooks() {
-        return textbooks;
-    }
-    
- public String courseI(String course_1,double grades2,String requerment) {
-      grades2=this.finalmark1;
-      course_1=this.course1;
-      requerment=this.course4;
-      if( grades2>50)
-          return requerment;
-      else
-         return course_1 ;       
- }
-  public String courseII(String course_2,double grades0,String requermentI) {
-      grades0=this.finalmark2;
-      course_2=this.course2;
-      requermentI=this.course5;
-      if(grades0>50)
-          return requermentI;
-      else
-         return course_2 ;       
-}
-   public String courseIII(String course_3,double grades1,String requermentII) {
-      grades1=this.finalmark3;
-      course_3=this.course3;
-      requermentII=this.course6;
-      if(grades1>50)
-      return requermentII;
-       else
-       return course_3 ;       
-}
 }

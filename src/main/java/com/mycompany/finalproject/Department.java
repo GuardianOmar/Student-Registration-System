@@ -7,6 +7,9 @@ public class Department {
     protected String name;
     protected ArrayList<Instructor>faculties;
 
+    public Department() {
+    }
+
     public Department(int departmentid, String name, ArrayList<Instructor> faculties) {
         this.departmentid = departmentid;
         this.name = name;

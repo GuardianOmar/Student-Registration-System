@@ -9,6 +9,9 @@ public class Instructor {
     protected String phonenumber;
     protected ArrayList<String>department;
 
+    public Instructor() {
+    }
+
     public Instructor(int facultyid, String name, String address, String phonenumber, ArrayList<String> department) {
         this.facultyid = facultyid;
         this.name = name;
