@@ -3,19 +3,19 @@ package com.mycompany.finalproject;
 import java.util.ArrayList;
 
 public class student {
-    protected String studylevel ;
-    protected  double GPA;
-    protected  String id;
-    protected  int semester;
-    protected  double cridet ;
-    protected  static int numberofstudent;  
-    protected ArrayList<String>registeredcourses; 
+    protected String studylevel;
+    protected double GPA;
+    protected String id;
+    protected int semester;
+    protected double cridet;
+    protected static int numberofstudent;
+    protected ArrayList<String>registeredcourses;
     protected String name;
     protected String birth;
     protected String address;
-    protected  String phone;
+    protected String phone;
     protected String enrolled_year;
-    protected  String faculty;
+    protected String faculty;
     protected String department;
 
     public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department) {
@@ -156,6 +156,6 @@ public class student {
             return false;
     }
  public void printdata(){
-System.out.println(birth+"\n"+address+"\n"+phone+"\n"+enrolled_year+"\n"+faculty+"\n"+department+"\n"+id+"\n"+GPA+"\n"+"your check"+cridet+"$"+"\n"+studylevel);
+System.out.println("birth: "+birth+"\n"+"address: "+address+"\n"+"phone: "+phone+"\n"+"enrolled year: "+enrolled_year+"\n"+"faculty: "+faculty+"\n"+"department: "+department+"\n"+"id: "+id+"\n"+"GPA:"+GPA+"\n"+"your check"+cridet+"$"+"\n"+"studylevel: "+studylevel);
     }
 }
