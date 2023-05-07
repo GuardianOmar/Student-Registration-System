@@ -39,4 +39,7 @@ public void addcourse(course cours){
 public void removecourse(course cours){
      courses.remove(cours);
 }
+public void print_Classroom(){
+    System.out.println("ID: "+id+"\n"+"location: "+location+"\n"+"capacity: "+capacity+"\n"+"courses: "+courses);
+}
 }

@@ -131,4 +131,7 @@ public class course {
     public int getCoursenamber() {
         return coursenumber;
     }
+    public void print_course(){
+    System.out.println();
+    }
 }

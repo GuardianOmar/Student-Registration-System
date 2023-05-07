@@ -27,4 +27,5 @@ public class Department {
     public ArrayList<Instructor> getFaculties() {
         return faculties;
     }
+    
 }

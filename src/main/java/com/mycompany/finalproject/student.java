@@ -155,7 +155,7 @@ public class student {
         else
             return false;
     }
- public void printdata(){
-System.out.println("birth: "+birth+"\n"+"address: "+address+"\n"+"phone: "+phone+"\n"+"enrolled year: "+enrolled_year+"\n"+"faculty: "+faculty+"\n"+"department: "+department+"\n"+"id: "+id+"\n"+"GPA:"+GPA+"\n"+"your check"+cridet+"$"+"\n"+"studylevel: "+studylevel);
+    public void print_student(){
+        System.out.println("birth: "+birth+"\n"+"address: "+address+"\n"+"phone: "+phone+"\n"+"enrolled year: "+enrolled_year+"\n"+"faculty: "+faculty+"\n"+"department: "+department+"\n"+"id: "+id+"\n"+"GPA:"+GPA+"\n"+"your check"+cridet+"$"+"\n"+"studylevel: "+studylevel);
     }
 }

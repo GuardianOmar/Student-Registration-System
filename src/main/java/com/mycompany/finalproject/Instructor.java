@@ -39,4 +39,7 @@ public class Instructor {
     public ArrayList<String> getDepartment() {
         return department;
     }
+    public void print_Instructor(){
+        System.out.println("faculty id: "+facultyid+"\n"+"name: "+name+"\n"+"address: "+address+"\n"+"phonenumber: "+phonenumber+"\n"+"department: "+department);
+    }
 }
