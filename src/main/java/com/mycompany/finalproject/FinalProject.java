@@ -25,22 +25,22 @@ public class FinalProject {            //team 7 ok ?
         
         //test
         
-        student s1 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
-        student s2 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
-        student s3 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
-        student s4 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
-        student s5 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
-        s1.print_student();
-        s2.print_student();
-        s3.print_student();
-        s4.print_student();
-        s5.print_student();
-        ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("filename.ser"));
-        oos.writeObject(s1);
-        oos.writeObject(s2);
-        oos.writeObject(s3);
-        oos.writeObject(s4);
-        oos.writeObject(s5);
-        oos.close();
+//        student s1 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
+//        student s2 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
+//        student s3 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
+//        student s4 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
+//        student s5 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
+//        s1.print_student();
+//        s2.print_student();
+//        s3.print_student();
+//        s4.print_student();
+//        s5.print_student();
+//        ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("filename.ser"));
+//        oos.writeObject(s1);
+//        oos.writeObject(s2);
+//        oos.writeObject(s3);
+//        oos.writeObject(s4);
+//        oos.writeObject(s5);
+//        oos.close();
     }
 }

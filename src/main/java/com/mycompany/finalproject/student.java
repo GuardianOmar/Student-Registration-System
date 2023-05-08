@@ -18,14 +18,14 @@ public class student {
     protected String faculty;
     protected String department;
 
-    public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department) {
+    public student(String name,String id,String enrolled_year,String faculty,String department,String birth,String phone,String address,int semester,String studylevel,double GPA,double cridet){
+        this.name = name;
         this.studylevel = studylevel;
         this.GPA = GPA;
         this.id = id;
         this.semester = semester;
         this.cridet = cridet;
-        this.registeredcourses = registeredcourses;
-        this.name = name;
+        //this.registeredcourses = registeredcourses;
         this.birth = birth;
         this.address = address;
         this.phone = phone;
@@ -37,7 +37,9 @@ public class student {
     public static void setNumberofstudent(int numberofstudent) {
         student.numberofstudent = numberofstudent;
     }
-
+    public static int getnumberofstudent() {
+        return numberofstudent;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -64,10 +66,6 @@ public class student {
 
     public void setDepartment(String department) {
         this.department = department;
-    }
- 
-    public static int getnumberofstudent() {
-        return numberofstudent;
     }
     public void setStudylevel(String studylevel) {
         this.studylevel = studylevel;
