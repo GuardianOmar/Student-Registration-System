@@ -8,14 +8,14 @@ public class Classroom {
     protected int capacity;
     protected ArrayList<course>courses;
 
+    public Classroom() {
+    }
+    
     public Classroom(int id, String location, int capacity, ArrayList<course> courses) {
         this.id = id;
         this.location = location;
         this.capacity = capacity;
         this.courses = courses;
-    }
-
-    public Classroom() {
     }
 
     public int getId() {
@@ -40,6 +40,6 @@ public void removecourse(course cours){
      courses.remove(cours);
 }
 public void print_Classroom(){
-    System.out.println("ID: "+id+"\n"+"location: "+location+"\n"+"capacity: "+capacity+"\n"+"courses: "+courses);
+    System.out.println("location:"+"\t"+location+"\n"+"capacity:"+"\t"+capacity+"\n"+"courses:"+"\t\t"+courses+"\n"+"ID:"+"\t\t"+id);
 }
 }

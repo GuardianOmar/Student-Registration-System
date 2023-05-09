@@ -18,7 +18,7 @@ public class student {
     protected String faculty;
     protected String department;
 
-    public student(String name,String id,String enrolled_year,String faculty,String department,String birth,String phone,String address,int semester,String studylevel,double GPA,double cridet){
+    public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department){
         this.name = name;
         this.studylevel = studylevel;
         this.GPA = GPA;
@@ -154,6 +154,6 @@ public class student {
             return false;
     }
     public void print_student(){
-        System.out.println("birth: "+birth+"\n"+"address: "+address+"\n"+"phone: "+phone+"\n"+"enrolled year: "+enrolled_year+"\n"+"faculty: "+faculty+"\n"+"department: "+department+"\n"+"id: "+id+"\n"+"GPA:"+GPA+"\n"+"your check"+cridet+"$"+"\n"+"studylevel: "+studylevel);
+        System.out.println("name:"+"\t\t"+name+"\n"+"id:"+"\t\t"+id+"\n"+"faculty:"+"\t\t"+faculty+"\n"+"department:"+"\t"+department+"\n"+"enrolled year:"+"\t"+enrolled_year+"\n"+"birth:"+"\t\t"+birth+"\n"+"address:"+"\t\t"+address+"\n"+"phone:"+"\t\t"+phone+"\n"+"GPA:"+"\t\t"+GPA+"\n"+"studylevel:"+"\t"+studylevel+"\n"+"your check:"+"\t"+cridet+"$");
     }
 }
