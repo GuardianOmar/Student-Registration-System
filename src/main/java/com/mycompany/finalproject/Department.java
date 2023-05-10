@@ -27,5 +27,8 @@ public class Department {
     public ArrayList<Instructor> getFaculties() {
         return faculties;
     }
+    public void print_Department(){
+        System.out.println("name:"+"\t\t"+name+"\n"+"departmentid:"+"\t"+departmentid+"\n"+"faculties:"+"\t"+faculties);
+    }
     
 }

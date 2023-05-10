@@ -132,6 +132,6 @@ public class course {
         return coursenumber;
     }
     public void print_course(){
-    System.out.println();
+    System.out.println("course1"+"\t"+course1+"\n"+"course2"+"\t"+course2+"\n"+"course3"+"\t"+course3+"\n"+"course4"+"\t"+course4+"\n"+"course5"+"\t"+course5+"\n"+"course6"+"\t"+course6+"\n"+"finalmark1"+"\t"+finalmark1+"\n"+"finalmark2"+"\t"+finalmark2+"\n"+"finalmark3"+"\t"+finalmark3+"\n"+"term"+"\t"+term+"\n"+"credits"+"\t"+credits+"\n"+"coursenumber"+"\t"+coursenumber+"\n"+"prerequisitecourses"+"\t"+prerequisitecourses+"\n"+"textbooks"+"\t"+textbooks+"\n"+"instructor"+"\t"+instructor+"\n"+"department"+"\t"+department+"\n"+"classroom"+"\t"+classroom);
     }
 }

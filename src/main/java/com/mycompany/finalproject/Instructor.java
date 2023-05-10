@@ -40,6 +40,6 @@ public class Instructor {
         return department;
     }
     public void print_Instructor(){
-        System.out.println("faculty id: "+facultyid+"\n"+"name: "+name+"\n"+"address: "+address+"\n"+"phonenumber: "+phonenumber+"\n"+"department: "+department);
+        System.out.println("name:"+"\t\t"+name+"\n"+"phonenumber:"+"\t"+phonenumber+"\n"+"faculty id:"+"\t"+facultyid+"\n"+"address:"+"\t\t"+address+"\n"+"department:"+"\t"+department);
     }
 }
