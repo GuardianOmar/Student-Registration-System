@@ -10,9 +10,7 @@ public class FinalProject {            //team 7 ok ?
         ArrayList list3= new ArrayList<>(500);
         ArrayList lista= new ArrayList<>(500);
         ArrayList listo= new ArrayList<>(500);
-        
         //test
-        
         //Classroom
         System.out.println("\t"+"Classroom info");//right
         Classroom C1=new Classroom(123,"asd",20,lista);
@@ -25,7 +23,6 @@ public class FinalProject {            //team 7 ok ?
 //        C3.print_Classroom();
 //        C4.print_Classroom();
 //        C5.print_Classroom();
-        
         //Department
         System.out.println("\t"+"Department info");//right
         Department d1= new Department(0000000,"dysgy",list3) ;
@@ -34,7 +31,10 @@ public class FinalProject {            //team 7 ok ?
 //        Department d4= new Department(0000000,"dysgy",list3) ;
 //        Department d5= new Department(0000000,"dysgy",list3) ;
         d1.print_Department();
-        
+//        d2.print_Department();
+//        d3.print_Department();
+//        d4.print_Department();
+//        d5.print_Department();
         //Instructor
         System.out.println("\t"+"Instructor info");//right
         Instructor i1 = new Instructor(00000,"dr mohamed","...","893276",listo);
@@ -60,7 +60,6 @@ public class FinalProject {            //team 7 ok ?
 //        c3.print_course();
 //        c4.print_course();
 //        c5.print_course();
-        
         //student
         System.out.println("\t"+"student info");//right
         student s1 =new student("grade1",2.5,"2205051",1,3000,"mohamed","2003","smoha","01289322355","2022","computer science","Ai");
@@ -78,7 +77,6 @@ public class FinalProject {            //team 7 ok ?
         s4.print_student();
         System.out.println("\t"+"student 5");
         s5.print_student();
-         
 //        ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("filename.ser"));
 //        oos.writeObject(s1);
 //        oos.writeObject(s2);
