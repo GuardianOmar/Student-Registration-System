@@ -21,7 +21,7 @@ public class course {
     private Department department;
     private Classroom classroom;
 
-    public course(ArrayList<String>textbooks,ArrayList<String>prerequisitecourses,String course1, String course2, String course3, String course4, String course5, String course6, double finalmark1, double finalmark2, double finalmark3, String term, int credits, int coursenamber, Instructor instructor, Department department, Classroom classroom) {
+    public course(ArrayList<String>textbooks,ArrayList<String>prerequisitecourses,String course1, String course2, String course3, String course4, String course5, String course6, double finalmark1, double finalmark2, double finalmark3, String term, int credits, int coursenamber) {
         this.course1 = course1;
         this.course2 = course2;
         this.course3 = course3;
@@ -93,9 +93,14 @@ public class course {
     public void setPrerequisitecourses(ArrayList<String> prerequisitecourses) {
         this.prerequisitecourses = prerequisitecourses;
     }
-
+    public void addprerequisitecourses(String prerequisitecourse) {
+        prerequisitecourses.add(prerequisitecourse);
+    }
     public void setTextbooks(ArrayList<String> textbooks) {
         this.textbooks = textbooks;
+    }
+    public void addtextbooks(String textbook) {
+        textbooks.add(textbook);
     }
     
     public String getCourse1() {
@@ -120,6 +125,14 @@ public class course {
         System.out.print( course2+""+course1+" "+course3+"");
     }
 
+    public ArrayList<String> getTextbooks() {
+        return textbooks;
+    }
+
+    public ArrayList<String> getPrerequisitecourses() {
+        return prerequisitecourses;
+    }
+
     public String getTerm() {
         return term;
     }
@@ -132,6 +145,6 @@ public class course {
         return coursenumber;
     }
     public void print_course(){
-    System.out.println("course1"+"\t"+course1+"\n"+"course2"+"\t"+course2+"\n"+"course3"+"\t"+course3+"\n"+"course4"+"\t"+course4+"\n"+"course5"+"\t"+course5+"\n"+"course6"+"\t"+course6+"\n"+"finalmark1"+"\t"+finalmark1+"\n"+"finalmark2"+"\t"+finalmark2+"\n"+"finalmark3"+"\t"+finalmark3+"\n"+"term"+"\t"+term+"\n"+"credits"+"\t"+credits+"\n"+"coursenumber"+"\t"+coursenumber+"\n"+"prerequisitecourses"+"\t"+prerequisitecourses+"\n"+"textbooks"+"\t"+textbooks+"\n"+"instructor"+"\t"+instructor+"\n"+"department"+"\t"+department+"\n"+"classroom"+"\t"+classroom);
+    System.out.println("course1"+"\t"+course1+"\n"+"course2"+"\t"+course2+"\n"+"course3"+"\t"+course3+"\n"+"course4"+"\t"+course4+"\n"+"course5"+"\t"+course5+"\n"+"course6"+"\t"+course6+"\n"+"finalmark1"+"\t"+finalmark1+"\n"+"finalmark2"+"\t"+finalmark2+"\n"+"finalmark3"+"\t"+finalmark3+"\n"+"term"+"\t"+term+"\n"+"credits"+"\t"+credits+"\n"+"coursenumber"+"\t"+coursenumber+"\n"+"prerequisitecourses"+"\t"+prerequisitecourses+"\n"+"textbooks"+"\t"+textbooks);
     }
 }

@@ -6,14 +6,15 @@ public class Department {
     protected int departmentid;
     protected String name;
     protected ArrayList<Instructor>faculties;
+    protected ArrayList<String>aculties;
 
     public Department() {
     }
 
-    public Department(int departmentid, String name, ArrayList<Instructor> faculties) {
+    public Department(int departmentid, String name, ArrayList<String> aculties) {
         this.departmentid = departmentid;
         this.name = name;
-        this.faculties = faculties;
+        this.aculties = aculties;
     }
 
     public int getDepartmentid() {
@@ -27,8 +28,15 @@ public class Department {
     public ArrayList<Instructor> getFaculties() {
         return faculties;
     }
+    public void addInstructor(Instructor instructor) {
+        faculties.add(instructor);
+    }
+    public void addaculties(String faculties) {
+        aculties.add(faculties);
+    }
+    
     public void print_Department(){
-        System.out.println("name:"+"\t\t"+name+"\n"+"departmentid:"+"\t"+departmentid+"\n"+"faculties:"+"\t"+faculties);
+        System.out.println("name:"+"\t\t"+name+"\n"+"departmentid:"+"\t"+departmentid+"\n"+"faculties:"+"\t"+aculties);
     }
     
 }

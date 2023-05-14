@@ -18,14 +18,14 @@ public class student {
     protected String faculty;
     protected String department;
 
-    public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department){
+    public student(String studylevel, double GPA, String id, int semester, double cridet, String name, String birth, String address, String phone, String enrolled_year, String faculty, String department,ArrayList registeredcourses){
         this.name = name;
         this.studylevel = studylevel;
         this.GPA = GPA;
         this.id = id;
         this.semester = semester;
         this.cridet = cridet;
-        //this.registeredcourses = registeredcourses;
+        this.registeredcourses = registeredcourses;
         this.birth = birth;
         this.address = address;
         this.phone = phone;

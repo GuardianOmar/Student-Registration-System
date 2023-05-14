@@ -39,6 +39,9 @@ public class Instructor {
     public ArrayList<String> getDepartment() {
         return department;
     }
+    public void addepartment(String Department) {
+        department.add(Department);
+    }
     public void print_Instructor(){
         System.out.println("name:"+"\t\t"+name+"\n"+"phonenumber:"+"\t"+phonenumber+"\n"+"faculty id:"+"\t"+facultyid+"\n"+"address:"+"\t\t"+address+"\n"+"department:"+"\t"+department);
     }
